@@ -69,3 +69,17 @@ p{
      text-decoration: none;
      color: black;
 }
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills img{
+    display: flex;
+    justify-items: space-between;
+    flex-wrap: wrap;
+    height: 280px;
+    width: 300px;
+}
