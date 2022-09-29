@@ -54,20 +54,23 @@ nav ul li a:hover::after{
 }
 
 header{
+    padding: 80px 10px;
     font-size: 55px;
     font-family: 'Pacifico', cursive;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 
 h2{
-     font-size: 70px;
-     font-family: 'Pacifico', cursive;
+    padding: 0 40px;
+     font-size: 60px;
+     font-family: 'Poppins', sans-serif;
      text-align: left;
      margin-left: 30%;
      text-decoration: none;
-     color: black;
+     color: crimson;
+
 }
 
 
@@ -86,16 +89,16 @@ h2{
 }
 .col1 img{
     width: 100%;
-    border-radius: 25px;
+    border-radius: 205px;
 }
 .col2{
-    flex-basis: 60%;
+    flex-basis: 55%;
 }
 
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: rgb(216, 38, 38);
     text-align: center;
 }
 
@@ -103,4 +106,13 @@ p{
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     text-align: center;
+}
+
+#skills img{
+
+    justify-content: space-between;
+    height: 350px;
+    width: 400px;
+    padding: 40px 50px;
+    margin-left: 11%;
 }
