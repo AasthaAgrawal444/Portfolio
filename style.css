@@ -17,7 +17,7 @@ body{
 }
 #header{
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     background-image: url(imagess/bgd1.jpg);
     background-size: cover;
     background-position: center;
@@ -48,6 +48,7 @@ label.logo{
 
 nav ul{
     float: right;
+    margin-right: 20px;
 }
 
 nav ul li{
@@ -187,13 +188,57 @@ p{
     text-align: center;
 }
 
-#skills img{
+#skills{
+    padding: 20px 0;
+}
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, .7fr));
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+.skill{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.skill img{
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    display: block;
 
-    justify-content: space-between;
-    height: 350px;
-    width: 400px;
-    padding: 40px 50px;
-    margin-left: 11%;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h5{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.skill:hover img{
+    transform: scale(0.5);
+}
+
+.skill:hover .layer{
+    height: 100%;
 }
 
 #projects{
@@ -222,7 +267,9 @@ p{
 }
 
 .project-list div h3{
+    padding: 10px;
     font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
     margin-bottom: 15px;
     text-align: center;
@@ -282,7 +329,7 @@ p{
 
 }
 .line {
-    padding: 0 65%;
+    padding: 0 40%;
     color: goldenrod;
     
 }
@@ -310,7 +357,7 @@ nav.fa-solid{
     .header-text header{
         font-size: 30px;
     }
-    nav.fa-solid{
+   /* nav.fa-solid{
         display: block;
         font-size: 25px;
     }
@@ -333,8 +380,20 @@ nav.fa-solid{
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }*/
+    .sub-title{
+        font-size: 40px;
+    }
+    .col1,.col2{
+        flex-basis: 100%;
+    }
+    .col1{
+        margin-bottom: 30px;
+    }
+    .col2{
+        font-size: 10px;
+    }
+    .skill{
+        align-self: center;
     }
     
-
-
-}
