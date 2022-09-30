@@ -16,7 +16,7 @@ body{
     background-image: url(imagess/bg.jpg);
     background-size: cover;
     background-position: center;
-    position: fixed;
+    /* position: fixed; */
 }
 
 #header img{
@@ -45,6 +45,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 20px;
     position: relative;
+    transition: 0.5s;
 }
 
 nav ul li a::after{
@@ -82,7 +83,7 @@ header-text header span{
      text-align: left;
      margin-left: 30%;
      text-decoration: none;
-     color: #fff;
+     color: rgb(13, 54, 13);
 
 }
 
@@ -111,8 +112,10 @@ header-text header span{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
+    font-family: 'Pacifico', cursive;;
     color: #fff;
     text-align: center;
+    border-bottom: solid #18ab29;
     
 }
 
@@ -144,21 +147,23 @@ p{
 .project-list div{
     background: #262626;
     padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
+    font-size: 9px;
+    font-weight: 100;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
 
 .project-list div img{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 400px;
+    padding-left: 100px;
 }
 
 .project-list div h3{
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .project-list div a{
@@ -167,6 +172,7 @@ p{
     font-size: 15px;
     margin-top: 20px;
     display: inline-block;
+    text-align: center;
 }
 
 
@@ -176,4 +182,34 @@ p{
 }
 
 
+.myButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:20px;
+	font-weight:bold;
+	padding:19px 32px;
+	text-decoration:none;
+	text-shadow:1px 4px 3px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
+#contact{
+    text-align: center;
+}
+
+.container h4{
+    text-align: center;
+    border-right: #18ab29;
+    border-left: #18ab29;
+}
