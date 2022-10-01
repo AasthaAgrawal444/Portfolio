@@ -91,47 +91,12 @@ nav ul li a:hover::after{
     font-display: none;
 }
 
-/*@media(max-width: 952px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-    
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-
-}*/
-
 .header-text{
     margin-top: 20%;
     font-size: 70px;
 }
 
-header-text header{
+.header-text header{
     font-size: 50px;
     font-family: 'Pacifico', cursive;
     text-align: left;
@@ -140,14 +105,15 @@ header-text header{
 }
 
 
-header-text span{
+.header-text header span{
 
-     font-size: 60px;
-     font-family: 'Poppins', sans-serif;
-     text-align: left;
-     margin-left: 30%;
-     text-decoration: none;
-     color: gold
+   font-size: 60px;
+   font-family: 'Poppins', sans-serif;
+   text-align: left;
+   padding-bottom: 90px;
+   padding-left: 100px;
+   text-decoration: none;
+   color: gold;
 
 }
 
@@ -179,7 +145,6 @@ header-text span{
     font-family: 'Pacifico', cursive;;
     color: #fff;
     text-align: center;
-    
 }
 
 p{
@@ -202,6 +167,7 @@ p{
     position: relative;
     overflow: hidden;
 }
+
 .skill img{
     width: 80%;
     height: 200px;
@@ -223,7 +189,7 @@ p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 30px;
+    padding: 0 40px;
     text-align: center;
     transition: height 0.5s;
 }
@@ -242,37 +208,40 @@ p{
 }
 
 #projects{
-    padding: 30px 0;
+    padding: 50px 0;
 }
 .project-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    padding: 60px;
 }
 
 .project-list div{
     background: #262626;
     padding: 40px;
     font-size: 9px;
-    font-weight: 100;
+    font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
 
 .project-list div img{
-    height: 250px;
-    width: 400px;
-    padding-left: 100px;
+    height: 400px;
+    width: 100%;
+    padding: 20px 40px;
+    
 }
 
 .project-list div h3{
     padding: 10px;
     font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 15px;
     text-align: center;
+    
 }
 
 .project-list div a{
@@ -328,11 +297,6 @@ p{
     margin: 100px;
 
 }
-.line {
-    padding: 0 40%;
-    color: goldenrod;
-    
-}
 
 .container-footer{
     padding: 20px 0;
@@ -345,6 +309,10 @@ p{
 nav.fa-solid{
     display: none;
 }
+.dropdown {
+    display: none;
+  }
+
 
 @media only screen and (max-width: 600px){
     #header{
@@ -355,33 +323,78 @@ nav.fa-solid{
         font-size: 16px;
     }
     .header-text header{
-        font-size: 30px;
+        font-size: 40px;
+        padding-bottom: 90px;
     }
-   /* nav.fa-solid{
-        display: block;
-        font-size: 25px;
+    .header-text header span{
+        font-size: 40px;
+        padding-bottom: 90px;
+        padding-left: 40px;
+        color: gold;
     }
 
-    nav ul{
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-    }
-    nav ul li{
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .dropdown {
         display: block;
-        margin: 25px;
-    }
-    nav ul .fa-solid{
+        float: left;
+        overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: #fff;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin-left: 20px;
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: grey;
+      }
+      
+      .dropdown-content {
+        display: none;
         position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }*/
-    .sub-title{
+        background-color: #3d7a79;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: white;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+  .sub-title{
         font-size: 40px;
     }
     .col1,.col2{
@@ -393,7 +406,14 @@ nav.fa-solid{
     .col2{
         font-size: 10px;
     }
-    .skill{
-        align-self: center;
+    .skills-list{
+        padding: 80px;
+    }
+    #contact img{
+        height: 40px;
+        margin: 0;
+    
     }
     
+
+}
