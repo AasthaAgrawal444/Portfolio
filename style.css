@@ -155,6 +155,7 @@ p{
 
 #skills{
     padding: 20px 0;
+    align-items: center;
 }
 .skills-list{
     display: grid;
@@ -405,6 +406,9 @@ nav.fa-solid{
     }
     .col2{
         font-size: 10px;
+    }
+    .skill img{
+        align-items: center;
     }
     .skills-list{
         padding: 80px;
