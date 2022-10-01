@@ -310,9 +310,7 @@ p{
 nav.fa-solid{
     display: none;
 }
-.dropdown {
-    display: none;
-  }
+
 
 
 @media only screen and (max-width: 600px){
