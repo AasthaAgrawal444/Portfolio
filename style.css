@@ -347,7 +347,6 @@ nav.fa-solid{
       }
       
       .dropdown {
-        display: block;
         float: left;
         overflow: hidden;
       }
